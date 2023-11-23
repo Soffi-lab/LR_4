@@ -1,0 +1,24 @@
+from clsChess import Chess
+
+# создать объект базы данных
+database_Chess = Chess()
+
+
+# просмотр всех записей
+def view_command():
+    for row in database_Chess.view():
+        print(row)
+
+
+# поиск по названию страны
+def search_command(lastname_s):
+    if len(database_Chess.search(lastname_s)) > 0:
+        for row in database_Chess.search(lastname_s):
+           print(row)
+    else:
+      print("Такого спортсмена нет")
+
+
+# основная программа в консоли
+# поиск по названию спортсмену
+search_command(input("Название спортсмену? "))
