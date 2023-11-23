@@ -1,0 +1,33 @@
+from clsChess import Chess
+
+# создать объект базы данных
+database_Chess = Chess()
+
+
+# обновление по id спортсменам
+def update_command(id, lastname_s, Date_of_Birth, country, sports_category, Name , the_date_of_the, busy_place):
+    (id, lastname_s, Date_of_Birth, country, sports_category, Name , the_date_of_the, busy_place)
+    print(f"Данные спортсмена  с id = {id} обновлены")
+
+
+# просмотр всех записей
+def view_command():
+    for row in database_Chess.view():
+        print(row)
+
+
+# основная программа
+print("Список спортсменов")
+view_command()
+id_update = int(input("Введите id спортсмена "))
+print("Укажите новые данные: ")
+lastname_s = input("Фамилия спортсмена")
+Date_of_Birth = float(input("дата рождения"))
+country = input("Название страны")
+sports_category = float(input("спортивный разряд"))
+Name = input("Название турнира")
+the_date_of_the = float(input("дата проведения"))
+busy_place = float(input("занятое место"))
+update_command(id_update, lastname_s, Date_of_Birth, country, sports_category, Name, the_date_of_the,busy_place )
+print("Список спортсменов ")
+view_command()
