@@ -16,7 +16,7 @@ class Chess:
                 "(ID INTEGER PRIMARY KEY,"
                 "lastname_s TEXT,"
                 "Date_of_Birth INTEGER,"
-                "capital TEXT,"
+                "country TEXT,"
                 "sports_category TEXT,"
                 "Name TEXT,"
                 "the_date_of_the INTEGER,"
